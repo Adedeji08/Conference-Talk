@@ -4,6 +4,7 @@ import { getAllTalks } from "../services/TalkService";
 import CreateTalks from "./CreateTalks";
 import { deleteTalk } from "../services/TalkService";
 import Chat from "./Chat";
+import Moment from "react-moment";
 
 const AllTalks: React.FC = () => {
   const [talks, setTalks] = useState<Talk[]>([]);
@@ -43,7 +44,10 @@ const AllTalks: React.FC = () => {
                 <p>{attendee.email}</p>
               ))}
               {talk.attendees.map((attendee) => (
-                <p>{attendee.dateCreated}</p>
+                <Moment format="MMM DD, YYYY HH:mm A">
+                {attendee.dateCreated}
+              </Moment>
+              
               ))}
               {talk.attendees.map((attendee) => (
                 <p>{attendee.__v}</p>
