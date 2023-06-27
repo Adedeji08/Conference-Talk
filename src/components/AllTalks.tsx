@@ -49,7 +49,7 @@ const AllTalks: React.FC = () => {
                 <p>{attendee.__v}</p>
               ))}
               <button
-                className=" text-1xl bg-green-500 text-white w-20 h-10 text-center border rounded shadow "
+                className=" text-1xl bg-red-500 text-white w-20 h-10 text-center border rounded shadow "
                 onClick={() => handleDeleteTalk(talk.id)}
               >
                 Delete

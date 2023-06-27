@@ -9,7 +9,7 @@ function App() {
     <div>
       <div className=" shadow-md font-bold flex flex-col2 justify-between text-center bg-slate-300">
         <h2 className="text-4xl h-20 pt-5 ml-6 uppercase text-purple-500">
-          Conference-Talk App
+          <Link to="/">  Conference-Talk App </Link>
         </h2>
         <div>
           <ul className="flex justify-evenly pt-5 mr-6">
