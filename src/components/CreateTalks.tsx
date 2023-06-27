@@ -20,7 +20,7 @@ const CreateTalks: React.FC = () => {
   };
   return (
     <div>
-      <h1>Create New Talk</h1>
+      <h1 className="font-bold text-green-400 text-2xl">Create New Talk</h1>
       <input
         className="shadow h-10 w-50 pl-4"
         type="text"
