@@ -49,7 +49,7 @@ const AllTalks: React.FC = () => {
                 <p>{attendee.__v}</p>
               ))}
               <button
-                className="pr-20"
+                className=" text-1xl bg-green-500 text-white w-20 h-10 text-center border rounded shadow "
                 onClick={() => handleDeleteTalk(talk.id)}
               >
                 Delete
@@ -58,6 +58,7 @@ const AllTalks: React.FC = () => {
           ))}
         </ul>
         <button
+        className='text-1xl bg-green-500 text-white w-80 h-10 text-center border rounded shadow ml-3'
           onClick={() => handleFetchTalksForAttendee("specificAttendeeId")}
           disabled={loading}
         >
